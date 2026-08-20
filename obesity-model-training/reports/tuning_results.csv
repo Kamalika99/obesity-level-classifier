@@ -1,0 +1,5 @@
+model,feature_config,cv_f1_macro,test_accuracy,test_f1_macro,test_f1_weighted,best_params,tune_time_sec
+Random Forest,full,0.943578279092908,0.971291866028708,0.970408294945238,0.971230776720612,"{'max_depth': 24, 'max_features': None, 'min_samples_leaf': 2, 'min_samples_split': 4, 'n_estimators': 314}",114.84
+XGBoost,full,0.9576553406701092,0.9473684210526316,0.9459767295174304,0.9475482885982334,"{'colsample_bytree': 0.6185801650879991, 'gamma': 0.3037724259507192, 'learning_rate': 0.059451995869314544, 'max_depth': 9, 'min_child_weight': 2, 'n_estimators': 487, 'subsample': 0.9768807022739411}",72.83
+Random Forest,lifestyle,0.8294993494986114,0.8349282296650717,0.8285759089229935,0.8329896758359167,"{'max_depth': 15, 'max_features': 'log2', 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 369}",110.04
+XGBoost,lifestyle,0.8378026788927224,0.8564593301435407,0.8517767153779818,0.8545490682160901,"{'colsample_bytree': 0.6185801650879991, 'gamma': 0.3037724259507192, 'learning_rate': 0.059451995869314544, 'max_depth': 9, 'min_child_weight': 2, 'n_estimators': 487, 'subsample': 0.9768807022739411}",84.35

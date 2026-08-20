@@ -1,0 +1,8 @@
+model: XGBoost
+feature_config: full
+cv_f1_macro: 0.9576553406701092
+test_f1_macro: 0.9459767295174304
+test_accuracy: 0.9473684210526316
+best_params: {'colsample_bytree': 0.6185801650879991, 'gamma': 0.3037724259507192, 'learning_rate': 0.059451995869314544, 'max_depth': 9, 'min_child_weight': 2, 'n_estimators': 487, 'subsample': 0.9768807022739411}
+
+Note: this model is loaded via src/model_io.py using models/xgboost_full_preprocessor.joblib + models/xgboost_full_classifier.json (native XGBoost format, not a monolithic pickle) for cross-version/platform robustness.
