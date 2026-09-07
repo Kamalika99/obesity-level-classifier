@@ -47,7 +47,7 @@ python src/train.py
 
 # 4. Hyperparameter-tune the top 2 models (Random Forest, XGBoost) on both configs
 python src/tune.py --model "XGBoost" --config full
-python src/tune.py --model "Random Forest" --config full
+python src/tune.py --model "Random Forest" --config full 
 python src/tune.py --model "XGBoost" --config lifestyle
 python src/tune.py --model "Random Forest" --config lifestyle
 # -> reports/tuning_results.csv, models/*_preprocessor.joblib, models/*_classifier.{json,joblib}
