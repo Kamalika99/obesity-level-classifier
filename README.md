@@ -108,7 +108,7 @@ SHAP global/per-class/per-prediction explanations, and where the model's
 errors concentrate — is in `notebooks/obesity_classifier_analysis.ipynb`
 and `reports/`.
 
-## Why accuracy is ~95% (and why that's expected, not a red flag)
+## Why accuracy is ~95% (and why that's expected)
 
 The obesity class labels in this dataset are themselves largely defined by
 BMI thresholds (BMI = Weight / Height²), and Weight/Height are included as
@@ -120,13 +120,3 @@ notebook) rather than left unexamined — the `lifestyle`-only accuracy
 (~83-85%) is the more informative number for "how predictive are behavioral
 factors alone."
 
-## Limitations
-
-- Dataset is partly synthetic (SMOTE-augmented), which likely makes classes
-  more cleanly separable than real-world survey data would be — treat
-  reported accuracy as an optimistic upper bound, not a real-world estimate.
-- ~2,000 rows is small for a 7-class problem; hyperparameter tuning gains
-  were modest and mixed in sign (see notebook Stage 4), consistent with
-  limited data to reliably distinguish between hyperparameter settings.
-- Not a medical diagnostic tool — reflects patterns in a specific survey
-  dataset, not clinical obesity assessment.
